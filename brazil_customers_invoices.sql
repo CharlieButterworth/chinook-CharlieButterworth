@@ -1,8 +1,8 @@
-SELECT LastName,
-    FirstName,
+SELECT FirstName,
+    LastName,
     InvoiceId,
-    Date,
+    InvoiceDate,
     Country
-from Customer,
-    Invoice
+FROM Invoice
+    INNER JOIN Customer ON Invoice.CustomerId = Customer.CustomerId
 WHERE Country LIKE "Brazil"

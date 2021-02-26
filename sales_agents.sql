@@ -1,4 +1,5 @@
 SELECT firstName,
-    lastName
+    lastName,
+    Title
 FROM Employee
 Where Title LIKE "Sales Support Agent"
