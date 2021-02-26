@@ -1,7 +1,6 @@
 SELECT i.InvoiceId,
-    c.firstName,
-    c.lastName,
-    e.firstName,
+    c.firstName CustomerName,
+    e.firstName SalesAgentName,
     c.Country,
     i.total
 FROM Employee e
